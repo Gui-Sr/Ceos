@@ -59,4 +59,4 @@ app.use(function(req, res, next) {
 });
 
 const porta = process.env.PORT || 8080;
-app.listen(porta, () => console.log(`Servidor rodando em http://localhost:${porta}`));
+app.listen(porta, () => console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env));
