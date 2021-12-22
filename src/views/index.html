@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <link rel="stylesheet" href="/files/css/all.min.css" />
+    <link rel="stylesheet" href="/files/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/files/css/main.css" />
+    <link rel="stylesheet" href="/files/css/main_dark.css" />
+    <link rel="stylesheet" href="/files/css/home.css" />
+    <link rel="icon" type="image/png" href="/files/img/main/favicon.png" />
+    <script src="/files/javascript/apiCeos.js"></script>
+    <title>Home - Ceos Community</title>
+</head>
+
+<body class="body-light" id="body">
+    <div class="wrapper" id="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo">
+                    <a href="/index.html"><img src="/files/img/main/logo.png" class="logotipo"></a>
+                </div>
+                <ul class="links">
+                    <li class="home-item"><a href="/index.html">Home</a></li>
+                    <li class="artigos-menu-item"><a href="/artigos.html">Artigos</a></li>
+                    <li class="sobre-item"><a href="/sobre.html">Sobre Nós</a></li>
+                    <li class="painel-item"><a href="/painel.html">Painel</a></li>
+                    <li>
+                        <a href="" class="desktop-link static-button">Conta <i class="fas fa-angle-down theme-check"></i></a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Conta <i class="fas fa-angle-down"></i></label>
+                        <ul id="dropdown" class="menu-conta">
+                            <li class="login-item"><a href="/login.html"><i class="fas fa-door-open"></i><span
+                    class="text-submenu">Login/Cadastro</span></a>
+                            </li>
+                            <li class="perfil-item"><a href="/perfil.html"><i class="fas fa-user-circle"></i><span
+                    class="text-submenu">Perfil</span></a>
+                            </li>
+                            <li class="sair-item"><a><i class="fas fa-sign-out-alt"></i><span
+                    class="text-submenu">Sair</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="desktop-link static-button">Aparência <i class="fas fa-angle-down theme-check"></i></a>
+                        <input type="checkbox" id="show-features1">
+                        <label for="show-features1">Aparência <i class="fas fa-angle-down"></i></label>
+                        <ul class="menu-aparencia">
+                            <li><button onclick="darkTheme()" class="theme"><i class="fas fa-moon"></i>
+                  <div class="text-dark">Tema Escuro <i id="check-dark" class="fas # theme-check"></i></div>
+                </button></li>
+                            <li><button onclick="lighTheme()" class="theme"><i class="fas fa-sun"></i>
+                  <div class="text-dark">Tema Claro <i id="check-light" class="fas fa-check theme-check"></i></div>
+                </button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="/search" class="search-box">
+                <input type="text" placeholder="Pesquisar..." required name="q">
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+        </nav>
+    </div>
+
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+
+    <div class="container-index">
+
+        <div class="container-info">
+            <img src="/files/img/main/logo.png" class="logo-home">
+            <h1>Bem-Vindos a Ceos Community!</h1>
+            <p class="text-home">
+                Entre para a Comunidade da Ceos Community e fique inteirado nos mais diversos temas do mundo da Programação!
+            </p>
+        </div>
+        <div class="buttons">
+            <a href="login.html"><button class="btn-conta"><span>Criar Conta</span></button></a>
+        </div>
+
+
+        <main class="cards">
+            <section class="card contact">
+                <div class="icon">
+                    <i class="far fa-address-book"></i>
+                </div>
+                <h3 class="title-card-home">Termos de Uso</h3>
+                <span class="text-card-home">Conheça os Termos de Uso da Ceos Community!</span>
+                <a href="termos.html"><button class="btn-card">Saiba Mais</button></a>
+            </section>
+            <section class="card shop">
+                <div class="icon">
+                    <i class="far fa-newspaper"></i>
+                </div>
+                <h3 class="title-card-home">Artigos</h3>
+                <span class="text-card-home">Acesse nossos Artigos e fique por dentro da nossa Comunidade!</span>
+                <a href="artigos.html"><button class="btn-card">Acessar</button></a>
+            </section>
+            <section class="card about">
+                <div class="icon">
+                    <i class="far fa-address-card"></i>
+                </div>
+                <h3 class="title-card-home">Sobre Nós</h3>
+                <span class="text-card-home">Conheça a equipe por trás da Ceos Community!</span>
+                <a href="sobre.html"><button class="btn-card">Saiba Mais</button></a>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <img src="files/img/main/logo.png" class="img-rodape">
+            <h3>CEOS COMMUNITY</h3>
+            <p>"Conhecimento nunca é demais"</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/etecdesapopemba" target="_blank"><i class="icon1 fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/etecdesapopemba" target="_blank"><i class=" icon2 fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/etecdesapopemba/?hl=pt-br" target="_blank"><i class="icon3 fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2021 Ceos Community</p>
+        </div>
+    </footer>
+
+    <script src="/files/javascript/main.js"></script>
+    <script src="/files/javascript/theme.js"></script>
+</body>
+
+</html>
